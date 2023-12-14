@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #f2f2f2;
+    color: #222222;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #222222
+}
+
+p {
+    color: #222222
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(0, 195, 255); 
+}
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+.event-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.event-title {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.event-date {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.event-description {
+    padding: 15px;
+}

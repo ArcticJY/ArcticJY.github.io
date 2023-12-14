@@ -1,0 +1,304 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #f2f2f2;
+    color: #222222;
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #222222
+}
+
+p {
+    color: #222222
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #222222;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(0, 195, 255); 
+}
+
+section {
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.section-heading {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section-line {
+    width: 100%;
+    height: 1px;
+    background-color: #333;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.blue-section {
+    background-color: rgb(126, 225, 255))
+    color: #fff;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.red-section {
+    background-color: #ffb1b1;
+    color: #fff;
+    padding: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #222222;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 1rem;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background-color: #555;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.notice-container {
+    width: 100%;
+    position: relative;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.notice-item {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    height: 100%;
+}
+
+.notice-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.notice-text {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.arrow-left {
+    left: 10px;
+}
+
+.arrow-right {
+    right: 10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: grid;
+    grid-gap: 15px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5em;
+}
+
+.social-icon {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0077b5; /* Change to the color of your choice */
+}
+
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    width: 300px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.event-title {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.event-description {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.news-container {
+    animation: scrollNews 20s linear infinite;
+}
+
+@keyframes scrollNews {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
